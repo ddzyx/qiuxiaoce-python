@@ -1,0 +1,29 @@
+site_name: 球小策 (QiuXiaoCe) 官方文档
+site_url: https://qiuxiaoce.readthedocs.io/
+site_author: QiuXiaoCe Team
+site_description: 球小策足球大数据与 AI 深度研报基础设施官方开发者文档与 Python SDK 使用指南
+
+theme:
+  name: material
+  language: zh
+  palette:
+    primary: teal
+    accent: green
+  features:
+    - navigation.instant
+    - content.code.copy
+
+nav:
+  - 首页: index.md
+  - 快速上手: quickstart.md
+  - 免费接口: free_api.md
+  - 关于球小策: about.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - tables

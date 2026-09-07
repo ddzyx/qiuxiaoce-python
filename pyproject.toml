@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qiuxiaoce"
+version = "0.1.0"
+authors = [
+  { name = "QiuXiaoCe Team", email = "contact@qiuxiaoce.com" },
+]
+description = "Official Python SDK for QiuXiaoCe (球小策) Football Big Data & AI Analysis API."
+readme = "README.md"
+requires-python = ">=3.8"
+license = "MIT"
+keywords = [
+  "football", "soccer", "sports-data", "qiuxiaoce", "football-api", 
+  "fixtures", "standings", "match-analysis", "premier-league", "xg"
+]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Operating System :: OS Independent",
+  "Topic :: Scientific/Engineering :: Information Analysis",
+  "Intended Audience :: Developers",
+]
+dependencies = [
+  "requests>=2.25.0",
+]
+
+[project.urls]
+"Homepage" = "https://www.qiuxiaoce.com"
+"Documentation" = "https://www.qiuxiaoce.com/mei-ri-bao-gao-su-lan/"
+"Daily Report" = "https://www.qiuxiaoce.com/mei-ri-bao-gao-su-lan/"
+"Source Code" = "https://github.com/ddzyx/qiuxiaoce-python"
+"Bug Tracker" = "https://github.com/ddzyx/qiuxiaoce-python/issues"
