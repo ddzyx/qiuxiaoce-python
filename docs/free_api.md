@@ -4,6 +4,7 @@
 
 | 接口名称 | 方法 | 说明 |
 | :--- | :--- | :--- |
+| **今日公开赛程** | `client.get_public_today_fixtures(...)` | 获取当日纯技战术赛程列表（最多 60 场） |
 | **球队中英文搜索** | `client.search_teams(q)` | 支持中文名、英文名、常见昵称模糊检索，返回规范 ID |
 | **联赛搜索** | `client.search_leagues(q)` | 搜索英超、西甲、欧冠等联赛 ID 与中英文名称 |
 | **联赛实时积分榜** | `client.get_standings(league_id, season)` | 完整主客场战绩、进失球与积分数据 |
