@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "qiuxiaoce"
-version = "0.1.0"
+version = "0.2.0"
 authors = [
   { name = "QiuXiaoCe Team", email = "contact@qiuxiaoce.com" },
 ]
@@ -33,7 +33,7 @@ dependencies = [
 
 [project.urls]
 "Homepage" = "https://www.qiuxiaoce.com"
-"Documentation" = "https://www.qiuxiaoce.com/mei-ri-bao-gao-su-lan/"
+"Documentation" = "https://qiuxiaoce.readthedocs.io/"
 "Daily Report" = "https://www.qiuxiaoce.com/mei-ri-bao-gao-su-lan/"
 "Source Code" = "https://github.com/ddzyx/qiuxiaoce-python"
 "Bug Tracker" = "https://github.com/ddzyx/qiuxiaoce-python/issues"
