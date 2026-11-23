@@ -29,6 +29,7 @@ pip install qiuxiaoce
 
 | 方法 | 说明 |
 | :--- | :--- |
+| `client.get_public_today_fixtures(...)` | 今日公开纯技战术赛程列表（免 Key，最多 60 场） |
 | `client.search_teams(q)` | 球队搜索（返回规范中英文别名，ID 体系通用） |
 | `client.search_leagues(q)` | 联赛搜索（中英文/别名） |
 | `client.get_standings(league_id, season)` | 联赛实时积分榜 |
@@ -111,12 +112,18 @@ for f in fixtures:
 | 类别 | 方法 | 说明 |
 | :--- | :--- | :--- |
 | **基础信息** | `client.get_quota()` | 查询账户当前剩余点数与用量 |
+| **公开赛程** | `client.get_public_today_fixtures(...)` | 今日公开纯技战术赛程（免 Key） |
 | **实体检索** | `client.search_teams(q)` | 按中英文搜索球队（获取 Team ID） |
+| | `client.get_team_profile(team_id)` | 球队档案、主场与联赛归属 |
+| | `client.get_team_fixtures(team_id, ...)` | 球队赛程与游标分页查询 |
 | | `client.search_leagues(q)` | 搜索赛事与联赛（获取 League ID） |
+| | `client.get_league_fixtures(league_id, ...)` | 联赛赛程与赛果列表 |
 | | `client.search_players(q)` | 搜索球员信息 |
+| | `client.get_player_detail(player_id)` / `stats` / `advanced` | 球员档案、分季统计与 OTI/DII/GIM 高阶指标 |
 | | `client.search_referees(q)` | 搜索裁判执法档案 |
-| **赛程快讯** | `client.get_fixtures(...)` | 灵活条件赛程列表 |
-| | `client.get_today_digest()` | 今日重点赛事实时摘要与彩票编号 |
+| **赛程快讯** | `client.get_fixtures(...)` | 灵活条件赛程列表（支持游标与分页） |
+| | `client.get_today_digest()` | 今日重点赛事实时摘要 |
+| **单场事件** | `client.get_fixture_stats(fixture_id)` / `events` / `lineups` / `shotmap` | 单场全场技术统计、时间轴事件、首发阵容与射门坐标 xG |
 | **榜单数据** | `client.get_standings(league_id, season)` | 联赛完整积分榜（支持历史赛季） |
 | | `client.get_topscorers(league_id)` | 联赛射手榜 |
 | | `client.get_topassists(league_id)` | 联赛助攻榜 |
@@ -128,7 +135,7 @@ for f in fixtures:
 | | `client.get_coach(coach_id)` | 执教履历与带队数据 |
 | | `client.get_referee(referee_id)` | 裁判执法尺度与出牌倾向 |
 | **官方研报** | `client.get_today_reports()` | 每日深度研报列表 |
-| | `client.get_report_detail(post_id)` | 单篇研报详情与结构化预测数据 |
+| | `client.get_report_detail(post_id)` | 单篇研报详情与结构化量化研究数据 |
 
 ---
 
